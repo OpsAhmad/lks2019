@@ -1,0 +1,676 @@
+@font-face{
+    font-family: 'lato';
+    src: url('../font/Lato/Lato-Regular.ttf');
+}
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'lato';
+}
+@keyframes wrapper{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.wrapper{
+    text-align: center;
+     max-width: 1140px;
+margin: 0 auto;
+animation: wrapper 0.8s;
+}
+.topnav{
+    overflow: hidden;
+    background: rgb(21, 21, 21);
+    #444
+}
+.topnav-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.topnav .logo-pojok img{
+    width: 130px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease; 
+}
+.topnav .logo-pojok img:hover,
+.topnav .logo-pojok img:focus{
+    opacity: 0.7;
+}
+.topnav a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: #cacaca;
+    font-size: 14pt;
+    margin: 25px 16px 0;
+}
+.topnav a:hover,
+.topnav a:focus{
+    color: #ffff;
+    border-color: #ffff; 
+}
+.topnav input{
+    width: 230px;
+    padding: 5px;
+    height: 25px;
+    margin: 14px;
+    border: none;
+    border-radius: 7px;
+    float: right;
+}
+.topnav .masuk-btn , .topnav .daftar-btn{
+    float: right;
+}
+.topnav .daftar-btn{
+    border: 1.5px solid #cacaca;
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin: 14px 16px 0;
+}
+
+.topnav .bars{
+    width: 25px;
+}
+.topnav a.icon{
+    display: none;
+}
+
+.container.produk{
+    background: #fff;
+    margin: 2em 0;
+    padding: 1em 0;
+    position: relative;
+}
+
+
+select.pilih{
+    width: 200px;
+    padding: 10px;
+    margin: 1em;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #00d298;
+    border: none;
+    color: #fff;
+}
+select.pilih2{
+    width: 200px;
+    padding: 10px;
+    margin: 1em;
+    top: 0;
+    right: 0;
+    background: #00d298;
+    border: none;
+    color: #fff;
+}
+/*JUMBOTRON*/
+@keyframes jumbotron{
+    0%{
+        background: url(../image/bg-header1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background: url(../image/bg-header2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background: url(../image/bg-header3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.jumbotron{
+    width: 100%;
+    height: 80vh;
+    max-height: 500px;
+    margin:  2em 0;     
+    color: #fff;
+    text-shadow: 5px 5px 10px #000;
+    background: #000;
+    background: url(../image/bg-header1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron-title{
+    width:100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.473);
+}
+.jumbotron a.lanjut-btn{
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius:7px;
+    text-shadow: none;
+    transition: all 0.4s ease;
+    margin-top: 15px;
+}
+.jumbotron a.lanjut-btn:hover,
+.jumbotron a.lanjut-btn:focus{
+opacity: 0.5;
+}
+/* JUMBOTRON END*/
+/*kelompok tani*/
+.kelompok-list{
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.kelompok{
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s ease;
+    margin: 0.5em;
+}
+.kelompok:hover,
+.kelompok:focus{
+    transform: scale(0.95);
+}
+.kelompok.k1{
+    background: url('../image/bg-ikan.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.kelompok.k2{
+    background: url('../image/bg-sayur.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.kelompok p{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #000;
+    font-size: 18pt;
+}
+.kelompok a{
+    text-decoration: none;
+}
+.container.judul{
+    padding: 1.5em 5px 1em;
+    text-align: left;
+}
+h1.judul{
+    font-size: 20pt;
+    padding: 3px;
+    border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+p.pusingg a{
+        text-decoration: none;
+        color: #009c53;
+}
+p.pusingg{
+       margin: 2em;
+}
+
+/*POPUP START*/
+@keyframes popup{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.13);
+    visibility: hidden;
+    display: none;
+}
+.popup:target{
+    visibility: visible;
+    display: block;    
+    animation: popup 0.3s;
+}
+.container.popop{
+    background: #fff;
+    width: 300px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12vh auto;
+    padding: 15px;
+}
+.container.popop img{
+    width: 50px;
+    margin: 10px auto
+}
+
+.btn.ya{
+    background: #f00;
+}
+.btn.ya:hover,.btn.ya:focus{
+    background: rgb(153, 0, 0);
+}
+.btn.tidak{
+    background: rgb(0, 132, 255)
+}
+.btn.tidak:hover{
+    background: rgb(0, 89, 172)
+}
+.btn.oke{
+    background: #00dc76;
+}
+.btn.oke:hover{
+    background: #009c53
+}
+
+/*POPUP END*/
+
+/*BANNER START*/
+.banner{
+    background: url('../image/banner.png');
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+.cards-user{
+    width: 100%;
+    margin: 2em 0;
+    padding: 0.5em;
+    display: block;
+}
+
+.card-user{
+    max-width: 300px;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+}
+.cards-user img{
+    width: 100px;
+    margin: 0.5em;
+}
+
+/*kartu kartu */
+.cards{
+    text-align: center;
+    margin: 1em 0;
+}
+.card{
+    display: inline-block;
+    width: 250px;
+    border: 1px solid #c0c0c0;
+    transition: all 0.4s ease;
+    margin: 1em 0.3em;
+    text-align: left;
+}
+.card:hover,
+.card:focus{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);
+    transform: scale(1.01);
+}
+.card .gambar-produk{
+    width: 250px;
+    height: 260px;
+    object-fit: cover;
+}
+.card h2{
+    padding: 10px;
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+.card p{
+    font-size: 14pt;
+}
+.container.profile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 6px;
+}
+.container.profile img{
+    width: 20px;
+}
+ a.btn{
+    font-size: 14pt;
+    padding: 5px 10px;
+    color: #fff;
+}
+.container.aksi{
+    margin: 0.5em 0;
+}
+.container.aksi a{
+    text-decoration: none;
+}
+a.btn.hapus{
+    background: rgb(255, 0, 0);
+}
+a.btn.hapus:hover{
+    background: rgb(230, 0, 0);
+}
+a.btn.edit{
+    background: rgb(0, 185, 25);
+}
+a.btn.edit:hover{
+    background: rgb(0, 128, 28);
+}
+.container.ps{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.ps-kiri,.ps-kanan{
+    width: 100%;
+    padding: 10px;
+}
+.ps-kiri img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.ps-kanan2{
+    border: 1px solid rgb(211, 211, 211);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ps-kanan2 img{
+    width: 60px;
+    margin: 0.3em
+}
+.deskripsi{
+    text-align: justify;
+    padding: 1em 10px 2em;
+    line-height: 1.5;
+}
+.ps-tengah{
+    margin: 1em 10px;
+}
+.komentar{
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 6px;
+    background: #fff;
+    text-align: left;
+    padding: 10px;
+    margin: 1.5em 0.3em
+}
+/*GLOBAL */
+textarea{
+    width: 70%;
+    resize: none;
+    height: 200px;
+    margin: 1em 0;
+    border: none;
+    background: #e2e2e2;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 13pt;
+}
+input[type=submit]{
+    padding: 10px 16px;
+    background: #00d298;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover,
+input[type=submit]:focus{
+    background: #00c58d
+}
+b.p{
+    color: #f00;
+    font-size: 14pt;
+}
+.wrapper input[type=text]{
+    width: 70%;
+    padding: 7px;
+    border: none;
+    background: #e2e2e2;
+    margin: 1em 0;
+    height: 30px;
+    border-radius: 7px;
+}
+.wrapper input[type=password]{
+    width: 70%;
+    padding: 7px;
+    border: none;
+    background: #e2e2e2;
+    margin: 1em 0;
+    height: 30px;
+    border-radius: 7px;
+}
+input[type=number]{
+    width: 70%;
+    padding: 7px;
+    border: none;
+    background: #e2e2e2;
+    margin: 1em 0;
+    height: 30px;
+    border-radius: 7px;
+}
+input[type=email]{
+    width: 70%;
+    padding: 7px;
+    border: none;
+    background: #e2e2e2;
+    margin: 1em 0;
+    height: 30px;
+    border-radius: 7px;
+}
+.tengen select{
+    padding: 6px 10px;
+    margin: 1em 0;
+    background: #00d298;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+input[type=file]{
+    background: #00c58d;
+    padding: 10px;
+    width: 70%;
+    margin: 1em 0;
+}
+/* GLOBAL END */
+@keyframes tememplek{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.tememplek{
+    display: flex;
+    margin:2em  1em;
+    background: #fff;
+    padding: 2em 1em;
+    animation: tememplek 0.3s;
+}
+.tememplek2{
+    display: flex;
+    margin:0em  0em;
+    background: #fff;
+    padding: 2em 1em;
+    animation: tememplek 0.3s;
+}
+.tememplek3{
+    margin:0em  auto;
+    background: #fff;
+    padding: 2em 1em;
+    animation: tememplek 0.3s;
+    max-width: 330px;
+    border-radius: 10px;
+}
+.tememplek4{
+    margin:0em  auto;
+    background: #fff;
+    padding: 2em 1em;
+    animation: tememplek 0.3s;
+    max-width: 700px;
+    border-radius: 10px;
+}
+.duwur img{
+    width: 100px;
+    margin: 1em 0;
+}
+.kiwo , .tengen{
+    width: 100%;
+}
+.tengen{
+    text-align: left;
+}
+.kiwo img{
+    width: 140px;
+    transition : all 0.4s ease;
+    animation: tememplek 1.3s;
+}
+.kiwo img:hover{
+    transform: scale(1.1);
+}
+
+.kiwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BAGIAN FOOTER*/
+footer{
+text-align: center;
+margin: 2em 0 0;
+padding: 0 10px 1em;
+overflow: hidden;
+background: rgb(0, 0, 0);
+}
+.container.sisi{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+.sisi{
+    width: 100%;
+    color: #fff;
+    margin: 2em 0;
+}
+.sisi.kiri img{
+    width: 30%;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+.sisi.kiri img:hover{
+   opacity: 0.6;
+}
+.sisi.kiri{
+    text-align: left;
+}
+.sisi.kanan{
+    text-align: right;
+}
+.sisi.bawah{
+    margin-top: 2em;
+}
+.sisi.bawah a{
+    text-decoration: none;
+    color: #00d298;
+}
+/* FOOTER END*/
+/*BANNERT END*/
+@media screen and (max-width: 375px){
+    .topnav .logo-pojok {
+        visibility: hidden;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .topnav input{
+        width: 200px;
+    }
+    .sisi{
+        font-size: 10pt
+    }
+    
+}
+@media screen and (max-width: 780px){
+    .container.ps{
+        display: block;
+    }
+    .tememplek{
+        display: block;
+    }
+    .tememplek2{
+        display: block;
+    }
+    .kiwo{
+        margin: 2em 0 3em;
+    }
+    .tengen{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1080px){
+
+    select.pilih{
+        float: none;
+        position: relative;
+    }
+    select.pilih2{
+        float: none;
+        position: relative;
+    }
+    .topnav a:not(:first-child){
+        display: none;
+    }
+    .topnav.responsive a{
+        display: block;
+        float: none;
+    }
+    .topnav a.icon{
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: 0;
+    }
+    .topnav input{
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+    .topnav.responsive a.daftar-btn{
+        margin: 25px 16px 0;
+        padding: 0;
+        border: none;
+    }
+    .topnav.responsive a.masuk-btn{
+        margin-bottom: 2em;
+    }
+    .jumbotron{
+        margin: 0;
+    }
+}
